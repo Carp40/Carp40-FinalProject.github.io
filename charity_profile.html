@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="charity_profile.js" defer></script>
+</head>
+<body>
+    <header class="header-class">
+        <h1 class="title-class">Charities Profile</h1>
+        <nav class="nav-class">
+          <a href="index.html" class="nav-link-class">Homepage</a> |
+          <a href="charities.html" class="nav-link-class">Charity list</a> 
+        </nav>
+      </header>
+<main>   
+      <section class="american-red-cross">
+            <h2 class="section-title-class">American Red Cross</h2>
+            <p>The Red Cross is a humanitarian organization that operates worldwide, providing assistance to those in need, particularly during emergencies and disasters. Some of the services provided are disaster response and relief, emergency preparedness, blood services, and health and safety training. </p>
+            <button id="volunteerButton1">Volunteer Now</button>
+            <img src="charity1.jpg" alt="Charity Picture" class="image-class">
+      </section>
+      <section class="ocean-conservancy">
+            <h2 class="section-title-class">Ocean Conservancy</h2>
+            <p> Ocean Conservancy works to address key threats to ocean health, including pollution, overfishing,habitat destruction, and climate change. They advocate for policies and practices that promote sustainable fisheries management, marine protected areas, and ecosystem conservation.</p>
+            <button id="volunteerButton2">Volunteer Now</button>
+            <img src="charity2.jpg" alt="Charity Picture" class="image-class">
+      </section>
+      <section class="oceana">
+            <h2 class="section-title-class">Oceana</h2>
+            <p>Oceana advocates for science-based policies and regulations to protect marine habitats, reduce overfishing, and promote sustainable fisheries management. They engage with policymakers, governement agencies, and stakeholders to advance policies that safeguard ocean health and biodiversity.</p>
+            <button id="volunteerButton3">Volunteer Now</button>
+            <img src="charity3.png" alt="Charity Picture" class="image-class">
+      </section>
+</main>       
+<footer>
+    <p>Author: Joseph Carpenter</p>
+    <p id="additionalInfo">Hover over this text for additional details.</p>
+    <p id="bibleVerse"  style="padding-top: 40px;"></p>
+    <p>John 3:16</p>
+  </footer>
+  <script>
+      fetch('https://bible-api.com/John 3:16')
+          .then(response => response.json())
+          .then(data => {
+              const bibleVerse = data.text;
+              document.getElementById('bibleVerse').innerText = bibleVerse;
+          })
+          .catch(error => console.error('Error fetching Bible verse:', error));
+  </script>
+</body>
+</html>

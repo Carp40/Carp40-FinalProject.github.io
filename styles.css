@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up typography */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    color: #333;
+}
+
+/* Header styles */
+.header-class {
+    background-color: #007bff;
+    padding: 20px;
+    text-align: center;
+}
+
+.title-class {
+    color: #fff; /* Corrected color code */
+}
+
+.nav-class {
+    margin-top: 10px;
+}
+
+.nav-link-class {
+    color: #ffffff; /* Corrected color code */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+.form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.image-class {
+    border: 1px solid #007bff; /* Border with complementary color */
+  }
+
+  .section-title-class {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.text-class {
+    color: #333;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
